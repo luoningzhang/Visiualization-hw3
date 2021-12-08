@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/echarts.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    
+</head>
+
+<body style="background-color: #f8f7a6;">
+    <!-- <iframe scrolling="auto" allowtransparency="true" name="main" style="height:1200px; width: 1200px; top: 0px;left: 0px;background-image:url(bg2.jpg)"> </iframe> -->
+    <div style="text-align: center;font-family: 黑体; left: 10px; position: absolute;color:rgb(255, 169, 9)">
+        <!-- 明代进士录 -->
+        <div style=" font-size: 50px;position: relative;margin: 0 auto;height:300px; width: 30px;">明代进士录多维数据可视化
+        </div>
+    </div>
+    <div style="text-align: left;font-family: 宋体; left: 420px;top:410px; position: absolute;color:rgb(10, 10, 10)">
+        <div style=" font-size: 14px;position: relative;height:50px; width: 1000px;">
+            Tips: 本可视化选取明进士年代、户籍、科目、籍贯、年龄五个重要数据属性
+        </div>
+    </div>
+    <div style="text-align: left;font-family: 宋体; left: 420px;top:430px; position: absolute;color:rgb(10, 10, 10)">
+        <div style=" font-size: 14px;position: relative;height:50px; width: 1000px;">
+            实现了数据的多维筛选和联动，可以自由探索多维数据间关系。
+        </div>
+    </div>
+    <div style="text-align: left;font-family: 宋体; left: 420px;top:450px; position: absolute;color:rgb(10, 10, 10)">
+        <div style=" font-size: 14px;position: relative;height:50px; width: 1000px;">
+            年代框选：在上面时间组件中选择特定时间区域，所有视图展现的就是选择时间段中的数据。
+        </div>
+    </div>
+    <div style="text-align: left;font-family: 宋体; left: 420px;top:470px; position: absolute;color:rgb(10, 10, 10)">
+        <div style=" font-size: 14px;position: relative;height:50px; width: 1000px;">
+            户籍选择：单击特定户籍的折线上任意折点，所有视图滤去除该户籍之外的数据，再次点击可回退。
+        </div>
+    </div>
+    <div style="text-align: left;font-family: 宋体; left: 420px;top:490px; position: absolute;color:rgb(10, 10, 10)">
+        <div style=" font-size: 14px;position: relative;height:50px; width: 1000px;">
+            科目选择：单击饼图中某科目对应半圆，所有视图滤去除该科目之外的数据，再次点击可回退。
+        </div>
+    </div>
+    <div style="text-align: left;font-family: 宋体; left: 420px;top:510px; position: absolute;color:rgb(10, 10, 10)">
+        <div style=" font-size: 14px;position: relative;height:50px; width: 1000px;">
+            籍贯选择：单击某司、某府、某县，所有视图滤去除该籍贯之外的数据，点击下方路径组件则可回退。
+        </div>
+    </div>
+    <div style="text-align: left;font-family: 宋体; left: 420px;top:530px; position: absolute;color:rgb(10, 10, 10)">
+        <div style=" font-size: 14px;position: relative;height:50px; width: 1000px;">
+            年龄选择：单击折线上折点，显示特定情况下此人详细信息。
+        </div>
+    </div>
+    <div id="huji" style="height:380px; width: 960px; top: 20px;left: 80px; position: absolute;"></div>
+    <div id="jiguan" style="height: 520px; width: 720px; top: 20px; left: 950px; position: absolute;"></div>
+
+    <div id="kemu" style="height:350px; width: 350px;top: 420px;left: 110px; position: absolute;"></div>
+    <div id="nianling" style="height:250px; width: 1000px;top: 550px;left: 680px; position: absolute;"></div>
+
+    <script type="text/javascript" src="./js/huji.js"></script>
+    <script type="text/javascript" src="./js/jiguan.js"></script>
+    <script type="text/javascript" src="./js/kemu.js"></script>
+    <script type="text/javascript" src="./js/nianling.js"></script>
+
+    <script type="text/javascript" src="./js/jiaohu.js"></script>
+
+</body>
+
+</html>
